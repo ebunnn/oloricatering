@@ -1,0 +1,49 @@
+.navbar--container {
+    display: inline-flex;
+    position: sticky;
+    top: 0;
+    flex-direction: row;
+    color: black;
+    background: white;
+    height: 14vh;
+    width: 100%;
+    left: 0;
+    z-index: 1000;
+    display: inline-flex;
+    align-items: center;
+  }
+
+.navbar--logo {
+  width: 11vw;
+  height: 20vh;
+  position: absolute;
+  top: -3.5vh;
+  left: 5vw;
+}
+  .navbar--links {
+    display: inline-flex;
+    flex-direction: row;
+    list-style: none;
+    position: absolute;
+    left: 19vw;
+    font-size: 70%;
+    gap: 1vw;
+  }
+
+  .navbar--links a {
+    text-decoration: none;
+    color: black;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  }
+
+ .navbar--links a:visited {
+  color: black;
+ }
+  
+a:visited {
+    text-decoration: none;
+  }
+  
+a:hover {
+  color: lightgray;
+}

@@ -1,0 +1,77 @@
+.home--container img{
+    max-width: 100%;
+    object-fit: cover;
+    height: 92vh;
+    overflow: hidden;
+}
+
+.home--container {
+    position: relative;
+    top: -5vh;
+}
+
+.home--imageTextContainer {
+    position: absolute;
+    z-index: 1000;
+    top: 13%;  
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    right: 13.5vw;
+}
+
+.home--text {
+    display: flex;
+    flex-direction: column;
+}
+
+.home--text h1 {
+    display: flex;
+    flex-direction: column;
+    color: #dd7418;
+}
+
+.home--olori {
+    position: relative;
+    top: 9vh;
+    font-family: "Romanesco", cursive;
+    color: #404b1f;
+    letter-spacing: 2px;
+}
+
+/* CSS */
+.button-74 {
+  background-color: white;
+  border: 2px solid #404b1f;
+  border-radius: 30px;
+  box-shadow: #404b1f 4px 4px 0 0;
+  color:#404b1f;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 0 18px;
+  line-height: 50px;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-74:hover {
+  background-color: #e6e3e1;
+  color:#404b1f;
+}
+
+.button-74:active {
+  box-shadow: #B20000 2px 2px 0 0;
+  transform: translate(2px, 2px);
+}
+
+@media (min-width: 768px) {
+  .button-74 {
+    min-width: 120px;
+    padding: 0 25px;
+  }
+}
