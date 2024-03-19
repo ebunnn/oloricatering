@@ -5,6 +5,7 @@ import OloriCateringLogo from "../Images/olori catering 1.png"
 
 
 export default function Navbar() {
+      
     return (
         <div className="navbar--container">
             <Link to="/"><img className="navbar--logo" src={OloriCateringLogo} alt="Website logo" /></Link>
