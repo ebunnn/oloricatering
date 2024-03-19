@@ -1,0 +1,25 @@
+.footer--container {
+    color: #404b1f;
+    background: white;
+    height: 150px;
+    width: 100%;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer--icons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .footer--icon {
+    font-size: 24px;
+    color:#404b1f;
+  }
+  
+  .footer--icon:hover {
+    color: lightgray;
+  }

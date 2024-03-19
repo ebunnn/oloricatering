@@ -11,6 +11,8 @@
     z-index: 1000;
     display: inline-flex;
     align-items: center;
+    z-index: 1500;
+
   }
 
 .navbar--logo {
@@ -20,30 +22,30 @@
   top: -3.5vh;
   left: 5vw;
 }
-  .navbar--links {
-    display: inline-flex;
-    flex-direction: row;
-    list-style: none;
-    position: absolute;
-    left: 19vw;
-    font-size: 70%;
-    gap: 1vw;
-  }
+.navbar--links {
+  display: inline-flex;
+  flex-direction: row;
+  list-style: none;
+  position: absolute;
+  left: 19vw;
+  font-size: 70%;
+  gap: 1vw;
+}
 
   .navbar--links a {
     text-decoration: none;
-    color: black;
+    color:#404b1f;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
   }
 
  .navbar--links a:visited {
-  color: black;
- }
+  color:#404b1f;
+}
   
 a:visited {
     text-decoration: none;
   }
   
-a:hover {
-  color: lightgray;
+.navbar--links a:hover {
+  color: gray;
 }

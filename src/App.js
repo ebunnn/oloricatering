@@ -4,6 +4,8 @@ import Home from "./components/Home"
 import Navbar from './components/Navbar';
 import AboutUs from './components/AboutUs';
 import ContactUs from './components/ContactUs';
+import Footer from "./components/Footer";
+import OurServices from "./components/OurServices";
 
 function App() {
   return (
@@ -14,9 +16,10 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} /> 
             <Route path="/about-us" element={<AboutUs />} />    
-            <Route path="/contact-us" element={<ContactUs />} />                    
+            <Route path="/contact-us" element={<ContactUs />} />
+            <Route path='/our-services' element={<OurServices />} />                   
           </Routes>
-          {/* <Footer />  */}
+          <Footer /> 
         </header>
       </Router>
     </div>

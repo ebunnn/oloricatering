@@ -1,0 +1,59 @@
+.ourservices--container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
+
+.ourservices--banner {
+    width: 100%;
+    object-fit: cover;
+}
+
+.ourservices--bannerText {
+    color: #404b1f;
+    position: relative;
+    top: -24vh;
+    z-index: 1000;
+}
+
+.ourservices--gridContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px; 
+    width: 50%;
+}
+
+.image-container {
+    position: relative; 
+}
+
+.ourservices--gridImg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: .5s ease;
+    position: relative; 
+}
+
+.ourservices--imageText {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color:#404b1f;
+    font-size: 2rem;
+    font-weight: bold;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+
+.image-container:hover .ourservices--imageText {
+    opacity: 1;
+}
+
+.ourservices--gridImg:hover {
+    opacity: 0.3;
+}
+

@@ -11,6 +11,7 @@ export default function Navbar() {
             <ul className="navbar--links">
                     <li><a href="javascript:void(0);"><Link to="/">Home</Link></a></li>
                     <li><a href="javascript:void(0);"><Link to="/about-us">About Us</Link></a></li>
+                    <li><a href="javascript:void(0);"><Link to="/our-services">Our Services</Link></a></li>
                     <li><a href="javascript:void(0);"><Link to="/contact-us">Contact Us</Link></a></li>
             </ul>
         </div>

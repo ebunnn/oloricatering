@@ -18,6 +18,8 @@
     flex-direction: column;
     text-align: left;
     right: 13.5vw;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+
 }
 
 .home--text {
