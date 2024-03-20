@@ -95,32 +95,55 @@ export default function OurServices() {
             </div>
             {showModal && <Modal text={modalText} onClose={closeModal} />}
 
-            <h1>Foods we offer</h1>
+            <h3 style={{color:"#404b1f"}}>Foods we offer</h3>
             <div className="ourservices--accordionContainer">
                     <button className="ourservices--accordion" onClick={() => handlePanelClick("Popular Meals")}>Popular Meals      <FontAwesomeIcon icon={faChevronDown} /></button>
                     <div style={{ display: openPanels["Popular Meals"] ? "block" : "none" }} className="ourservices--panel">
                         <div className="oursevices--panel-content">
-                            <h5>Jollof Rice</h5>
+                            <p>Jollof Rice</p>
+                            <p>Fried Rice</p>
+                            <p>Rice and Stew</p>
+                            <p>Yam Porridge</p>
+                            <p>Ẹ̀bà</p>
+                            <p>Ẹ̀wà Àgọ̀yìn</p>
+                            <p>Goat Meat Pepper Soup</p>
+                            <p>Catfish Pepper Soup</p>
                         </div>
                     </div>
                     <button className="ourservices--accordion" onClick={() => handlePanelClick("Swallow")}>Swallow      <FontAwesomeIcon icon={faChevronDown} /></button>
                     <div style={{ display: openPanels["Swallow"] ? "block" : "none" }} className="ourservices--panel">
                         <div className="oursevices--panel-content">
-                            <h5>Amala</h5>
-                            <h5>Iyán {"("}Pounded Yam{")"}</h5>
+                            <p>Àmàlà</p>
+                            <p>Iyán {"("}Pounded Yam{")"}</p>
+                            <p>Èbà</p>
                         </div>
                     </div>
                     <button className="ourservices--accordion" onClick={() => handlePanelClick("Soups")}>Soups     <FontAwesomeIcon icon={faChevronDown} /></button>
                     <div style={{ display: openPanels["Soups"] ? "block" : "none" }} className="ourservices--panel">
                         <div className="oursevices--panel-content">
-                            <h5>Efo Riro</h5>
-                            <h5>Egusi</h5>
+                            <p>Efo Riro {"("}Vegetable Soup{")"}</p>
+                            <p>Egusi {"("}Melon Seed Soup{")"}</p>
+                            <p>Okro</p>
+                            <p>Ewédú</p>
+                            <p>Ọ̀gbọ̀nọ̀</p>
+                            <p>Bitter Leaf Stew</p>
+                            <p>Gbẹ̀gìrì</p>
+                            <p>Ayamase {"("}Designer Stew{")"}</p>
                         </div>
                     </div>
                     <button className="ourservices--accordion" onClick={() => handlePanelClick("Sides")}>Sides      <FontAwesomeIcon icon={faChevronDown} /></button>
                     <div style={{ display: openPanels["Sides"] ? "block" : "none" }} className="ourservices--panel">
                         <div className="oursevices--panel-content">
-                            <h5>Plantain</h5>
+                            <p>Plantain</p>
+                        </div>
+                    </div>
+                    <button className="ourservices--accordion" onClick={() => handlePanelClick("Meats & Fish")}>Meats & Fish      <FontAwesomeIcon icon={faChevronDown} /></button>
+                    <div style={{ display: openPanels["Meats & Fish"] ? "block" : "none" }} className="ourservices--panel">
+                        <div className="oursevices--panel-content">
+                            <p>Beef</p>
+                            <p>Shaki</p>
+                            <p>Goat Meat</p>
+                            <p>Fried Fish</p>
                         </div>
                     </div>
             </div>

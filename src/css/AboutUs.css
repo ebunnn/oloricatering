@@ -13,3 +13,42 @@
     top: -24vh;
     z-index: 1000;
 }
+
+.aboutus--weAreImage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10%;
+    padding-right: 10%;
+    text-align: left;
+    position: relative;
+    top: -8vh;
+
+}
+.aboutus--weAreImage h1 {
+    color: #dd7418;
+    margin-left: auto;
+}
+
+.aboutus--weAreImage img {
+    max-width: 30%;
+    position: relative;
+}
+
+.aboutus--description {
+    font-size: 1.2rem;
+    max-width: 80%;
+}
+
+.aboutus--olori {
+    position: relative;
+    font-family: "Romanesco", cursive;
+    color: #404b1f;
+    letter-spacing: 2px;
+}
+
+.aboutus--buttons {
+    display: flex;
+    justify-content: center;
+    gap: 2vw;
+}

@@ -1,7 +1,7 @@
 import React from "react";
 import "../css/Navbar.css"
 import {Link} from "react-router-dom";
-import OloriCateringLogo from "../Images/olori catering 1.png"
+import OloriCateringLogo from "../Images/olori catering 1.png";
 
 
 export default function Navbar() {

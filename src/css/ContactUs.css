@@ -1,0 +1,20 @@
+.contactus--container {
+    width: 100%;
+}
+
+.contactus--banner {
+    width: 100%;
+    object-fit: cover;
+}
+
+.contactus--bannerText {
+    color:#404b1f;
+    position: relative;
+    top: -24vh;
+    z-index: 1000;
+}
+
+.contactus--formContainer {
+    display: inline-flex;
+    flex-direction: column;
+}
