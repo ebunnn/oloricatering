@@ -14,6 +14,7 @@ export default function Navbar() {
                     <li><a href="javascript:void(0);"><Link to="/about-us">About Us</Link></a></li>
                     <li><a href="javascript:void(0);"><Link to="/our-services">Our Services</Link></a></li>
                     <li><a href="javascript:void(0);"><Link to="/contact-us">Contact Us</Link></a></li>
+                    <li><a href="javascript:void(0);"><Link to="/contact-us">Place an Order</Link></a></li>
             </ul>
         </div>
     )

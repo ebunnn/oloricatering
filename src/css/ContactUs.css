@@ -18,3 +18,40 @@
     display: inline-flex;
     flex-direction: column;
 }
+
+.contactus--label {
+    font-size: 0.6em;
+    color:#404b1f;
+}
+
+.contactus--textLabel {
+    width: 30vw;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.contactus--formContainer textarea {
+    resize: none;
+    height: 30vh;
+}
+
+.contactus--contactInfo {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 30%;
+}
+
+.contactus--contactInfo p {
+    font-size: 1.2rem;
+}
+.contactus--formAndText {
+    display: flex;
+    justify-content: center;
+    gap: 15vw;
+    color: #404b1f;
+}
