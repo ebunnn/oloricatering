@@ -38,11 +38,11 @@ export default function Navbar( {showDropdown, setShowDropdown, toggleDropdown})
             {showDropdown && 
                 <div className="navbar--bars-dropdown">
                     <ul className="navbar--bars-dropdown-links">
-                            <li><NavLink to="/" activeClassName="active-link" onClick={() => setShowDropdown(false)}>Home</NavLink></li>
-                            <li><NavLink to="/about-us" activeClassName="active-link" onClick={() => setShowDropdown(false)}>About Us</NavLink></li>
-                            <li><NavLink to="/our-services" activeClassName="active-link" onClick={() => setShowDropdown(false)}>Our Services</NavLink></li>
-                            <li><NavLink to="/contact-us" activeClassName="active-link" onClick={() => setShowDropdown(false)}>Contact Us</NavLink></li>
-                            <li><NavLink to="/place-an-order" activeClassName="active-link" onClick={() => setShowDropdown(false)}>Place an Order</NavLink></li>
+                            <li><NavLink to="/" activeClassName="active-link" onClick={() => {setShowDropdown(false); setIsBarsShowing(true)}}>Home</NavLink></li>
+                            <li><NavLink to="/about-us" activeClassName="active-link" onClick={() => {setShowDropdown(false); setIsBarsShowing(true)}}>About Us</NavLink></li>
+                            <li><NavLink to="/our-services" activeClassName="active-link" onClick={() => {setShowDropdown(false); setIsBarsShowing(true)}}>Our Services</NavLink></li>
+                            <li><NavLink to="/contact-us" activeClassName="active-link" onClick={() => {setShowDropdown(false); setIsBarsShowing(true)}}>Contact Us</NavLink></li>
+                            <li><NavLink to="/place-an-order" activeClassName="active-link" onClick={() => {setShowDropdown(false); setIsBarsShowing(true)}}>Place an Order</NavLink></li>
                     </ul>
                 </div>
                 } 
