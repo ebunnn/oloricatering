@@ -13,7 +13,7 @@ app.use((req, res, next) => {
   next();
 });
 
-function sendEmail({ senderName, email, subject, message }) {
+function sendEmail({ senderName, email, phoneNumber, subject, message }) {
   return new Promise((resolve, reject) => {
     var transporter = nodemailer.createTransport({
       service: "gmail",
@@ -28,9 +28,12 @@ function sendEmail({ senderName, email, subject, message }) {
       to: process.env.EMAIL,
       subject: subject,
       html: `
-      <h4>Sender Name: ${senderName}</h4>
-      <p>Sender Email: ${email}</p>
-      <p>${message}</p>
+      <div>
+        <h4>From: <span><p style="display: inline; font-weight: normal;">${senderName}</p></span></h4>
+        <h4>Email: <span><p style="display: inline; font-weight: normal;">${email}</p></span></h4>
+        <h4>Phone Number: <span><p style="display: inline; font-weight: normal;">${phoneNumber}</p></span></h4>
+        <p>${message}</p>
+      </div>
       `,
     };
     transporter.sendMail(mail_configs, function (error, info) {

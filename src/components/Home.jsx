@@ -17,7 +17,7 @@ export default function Home({showDropdown}) {
             <img className="home--amalaImg" src={amala} alt="Image of amala" />
             <div className="home--imageTextContainer">
                 <div data-aos="fade-up" className="home--text">
-                    <h3 style={{fontSize:"3.5rem"}} className="home--olori">Olori Catering Services</h3>
+                    <h3 className="home--olori">Olori Catering Services</h3>
                     <h1 style={{textShadow:"2px 2px 4px #000000"}}>Welcome to the<br></br> world of authentic<br></br> Nigerian tastes!</h1>
                     <NavLink to="/our-services"><button class="button-74" role="button">Our Services</button></NavLink>
                 </div>

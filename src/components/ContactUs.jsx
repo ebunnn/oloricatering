@@ -10,11 +10,12 @@ import 'aos/dist/aos.css';
 export default function ContactUs() {
     const [senderName, setSenderName] = useState("");
     const [email, setEmail] = useState("");
+    const [phoneNumber, setPhoneNumber] = useState("");
     const [subject, setSubject] = useState("");
     const [message, setMessage] = useState("");
 
     const sendMail = () => {
-        if (!senderName || !email || !message) {
+        if (!senderName || !email || !message || !phoneNumber) {
             alert("Please fill out all required fields");
             return;
           }
@@ -24,6 +25,7 @@ export default function ContactUs() {
             params: {
               senderName,
               email,
+              phoneNumber,
               subject,
               message,
             },
@@ -73,6 +75,15 @@ export default function ContactUs() {
                             className="contactus--textLabel"
                             placeholder="Your email"
                             onChange={(e) => setEmail(e.target.value)}
+                            required
+                        />
+                        <br/>
+                        <label className="contactus--label">Your Phone Number <span style={{color:"red"}}>*</span></label><br />
+                        <input
+                            type="text"
+                            className="contactus--textLabel"
+                            placeholder="Your phone number"
+                            onChange={(e) => setPhoneNumber(e.target.value)}
                             required
                         />
                         <br />
