@@ -1,0 +1,51 @@
+.placeanorder--container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color:#404b1f;
+}
+
+.placeanorder--banner {
+    width: 100%;
+    object-fit: cover;
+}
+
+.placeanorder--bannerText {
+    color:#404b1f;
+    position: relative;
+    top: -24vh;
+    z-index: 1000;
+}
+
+.placeanorder--order-options {
+    text-align: left;
+    width: 35%;
+}
+
+.placeanorder--container a {
+    color:#404b1f;
+}
+
+.placeanorder--container a:visited {
+    color:#404b1f;
+  }
+
+
+@media only screen and (max-width : 1040px) {
+    .placeanorder--order-options {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width : 600px) {
+    .placeanorder--order-options {
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width : 600px) {
+    .placeanorder--container p {
+        display: none;
+    }
+}

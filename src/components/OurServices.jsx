@@ -8,6 +8,9 @@ import delivery from "../Images/Designer.jpg"
 import Modal from "./Modal";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
+import AOS from "aos";
+import 'aos/dist/aos.css';
+import Banner from "./Banner";
 
 
 export default function OurServices() {
@@ -42,6 +45,10 @@ export default function OurServices() {
         };
     }, [showModal]);
 
+    useEffect(()=> {
+        AOS.init({duration: 2000});
+    }, []);
+
     const openModal = (text) => {
         setModalText(text);
         setShowModal(true);
@@ -52,9 +59,11 @@ export default function OurServices() {
       };
     return (
         <div className="ourservices--container">
-            <img className="ourservices--banner" src={banner} alt="Our Services banner" />
-            <h2 className="ourservices--bannerText">Our Services</h2>
-            <div className="ourservices--gridContainer">
+            <Banner page="Our Services" />
+            <br/>
+            <br/>
+            <br/>
+            <div data-aos="fade-up" className="ourservices--gridContainer">
                 <div className="image-container" onClick={() => openModal(
                     "Experience the ultimate comfort food delight with our Amala on Spot! \
                     Indulge in a hearty bowl of freshly prepared Amala paired with our \
@@ -95,8 +104,8 @@ export default function OurServices() {
             </div>
             {showModal && <Modal text={modalText} onClose={closeModal} />}
 
-            <h3 style={{color:"#404b1f"}}>Foods we offer</h3>
-            <div className="ourservices--accordionContainer">
+            <h3 data-aos="fade-up" style={{color:"#404b1f"}}>Foods we offer</h3>
+            <div data-aos="fade-up" className="ourservices--accordionContainer">
                     <button className="ourservices--accordion" onClick={() => handlePanelClick("Popular Meals")}>Popular Meals      <FontAwesomeIcon icon={faChevronDown} /></button>
                     <div style={{ display: openPanels["Popular Meals"] ? "block" : "none" }} className="ourservices--panel">
                         <div className="oursevices--panel-content">
@@ -104,13 +113,10 @@ export default function OurServices() {
                             <p>Fried Rice</p>
                             <p>Rice and Stew</p>
                             <p>Yam Porridge</p>
-                            <p>Ẹ̀bà</p>
                             <p>Ẹ̀wà Àgọ̀yìn</p>
-                            <p>Goat Meat Pepper Soup</p>
-                            <p>Catfish Pepper Soup</p>
                         </div>
                     </div>
-                    <button className="ourservices--accordion" onClick={() => handlePanelClick("Swallow")}>Swallow      <FontAwesomeIcon icon={faChevronDown} /></button>
+                    <button className="ourservices--accordion" onClick={() => handlePanelClick("Swallow")}>Swallow {"("}Òkèlè{")"}    <FontAwesomeIcon icon={faChevronDown} /></button>
                     <div style={{ display: openPanels["Swallow"] ? "block" : "none" }} className="ourservices--panel">
                         <div className="oursevices--panel-content">
                             <p>Àmàlà</p>
@@ -118,32 +124,40 @@ export default function OurServices() {
                             <p>Èbà</p>
                         </div>
                     </div>
-                    <button className="ourservices--accordion" onClick={() => handlePanelClick("Soups")}>Soups     <FontAwesomeIcon icon={faChevronDown} /></button>
+                    <button className="ourservices--accordion" onClick={() => handlePanelClick("Soups")}>Soups {"("}Ọbẹ̀{")"}     <FontAwesomeIcon icon={faChevronDown} /></button>
                     <div style={{ display: openPanels["Soups"] ? "block" : "none" }} className="ourservices--panel">
                         <div className="oursevices--panel-content">
+                            <p>Buka Stew</p>
                             <p>Efo Riro {"("}Vegetable Soup{")"}</p>
-                            <p>Egusi {"("}Melon Seed Soup{")"}</p>
-                            <p>Okro</p>
+                            <p>Egusi</p>
+                            <p>Okro {"("}Ilá{")"}</p>
                             <p>Ewédú</p>
                             <p>Ọ̀gbọ̀nọ̀</p>
                             <p>Bitter Leaf Stew</p>
+                            <p>Afang</p>
                             <p>Gbẹ̀gìrì</p>
                             <p>Ayamase {"("}Designer Stew{")"}</p>
+                            <p>Goat Meat Pepper Soup</p>
+                            <p>Fish Pepper Soup</p>
                         </div>
                     </div>
                     <button className="ourservices--accordion" onClick={() => handlePanelClick("Sides")}>Sides      <FontAwesomeIcon icon={faChevronDown} /></button>
                     <div style={{ display: openPanels["Sides"] ? "block" : "none" }} className="ourservices--panel">
                         <div className="oursevices--panel-content">
-                            <p>Plantain</p>
+                            <p>Plantain {"("}Dòdò{")"}</p>
+                            <p>Gizdòdò {"("}Stewed Gizzard and Plantain{")"}</p>
                         </div>
                     </div>
                     <button className="ourservices--accordion" onClick={() => handlePanelClick("Meats & Fish")}>Meats & Fish      <FontAwesomeIcon icon={faChevronDown} /></button>
                     <div style={{ display: openPanels["Meats & Fish"] ? "block" : "none" }} className="ourservices--panel">
                         <div className="oursevices--panel-content">
+                            <p>Assorted Meats</p>
+                            <p>Stewed Chicken</p>
                             <p>Beef</p>
                             <p>Shaki</p>
                             <p>Goat Meat</p>
                             <p>Fried Fish</p>
+                            <p>Stewed Fish</p>
                         </div>
                     </div>
             </div>

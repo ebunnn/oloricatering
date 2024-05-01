@@ -1,21 +1,52 @@
-import React from "react";
+import {React, useState} from "react";
 import "../css/Navbar.css"
-import {Link} from "react-router-dom";
+import {NavLink} from "react-router-dom";
 import OloriCateringLogo from "../Images/olori catering 1.png";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
+import { faTimes } from '@fortawesome/free-solid-svg-icons';
 
 
-export default function Navbar() {
-      
+export default function Navbar( {showDropdown, setShowDropdown, toggleDropdown}) {
+    
+    const [isBarsShowing, setIsBarsShowing] = useState(true);
+    
+    const handleBars = () => {
+        setIsBarsShowing((prev) => !prev);
+        setShowDropdown((prev) => !prev);
+    }
+    
+    //When bars is true, showDropdown should be false
+    //When bars is false, showDropdown should be true
+
     return (
         <div className="navbar--container">
-            <Link to="/"><img className="navbar--logo" src={OloriCateringLogo} alt="Website logo" /></Link>
-            <ul className="navbar--links">
-                    <li><a href="javascript:void(0);"><Link to="/">Home</Link></a></li>
-                    <li><a href="javascript:void(0);"><Link to="/about-us">About Us</Link></a></li>
-                    <li><a href="javascript:void(0);"><Link to="/our-services">Our Services</Link></a></li>
-                    <li><a href="javascript:void(0);"><Link to="/contact-us">Contact Us</Link></a></li>
-                    <li><a href="javascript:void(0);"><Link to="/contact-us">Place an Order</Link></a></li>
-            </ul>
+            <div className="navbar--contents">
+                {/* <div onClick={handleBars}>{isBarsShowing ? <FontAwesomeIcon className="navbar--bars" icon={faBars} /> : <FontAwesomeIcon className="navbar--bars" icon={faTimes} />}</div> */}
+                {/* <NavLink to="/"><img className="navbar--logo" style={{width: "40%",top:"0.5vh",height: "auto",left: "-6vw",position: "relative"}} src={OloriCateringLogo} alt="Website logo" /></NavLink> */}
+                    <NavLink to="/"><img className="navbar--logo" style={{width: "180px",top:"0.5vh",height: "auto",position: "relative"}} src={OloriCateringLogo} alt="Website logo" /></NavLink>
+                    <FontAwesomeIcon className="navbar--bars" icon={isBarsShowing ? faBars : faTimes} onClick={handleBars} />
+                    <ul className="navbar--links">
+                            <li><NavLink to="/" activeClassName="active-link">Home</NavLink></li>
+                            <li><NavLink to="/about-us" activeClassName="active-link">About Us</NavLink></li>
+                            <li><NavLink to="/our-services" activeClassName="active-link">Our Services</NavLink></li>
+                            <li><NavLink to="/contact-us" activeClassName="active-link">Contact Us</NavLink></li>
+                            <li><NavLink to="/place-an-order" activeClassName="active-link">Place an Order</NavLink></li>
+                    </ul>  
+            </div>
+            {/* Using the && operator returns what is on its right if what is on its left is true */}
+            {showDropdown && 
+                <div className="navbar--bars-dropdown">
+                    <ul className="navbar--bars-dropdown-links">
+                            <li><NavLink to="/" activeClassName="active-link" onClick={() => setShowDropdown(false)}>Home</NavLink></li>
+                            <li><NavLink to="/about-us" activeClassName="active-link" onClick={() => setShowDropdown(false)}>About Us</NavLink></li>
+                            <li><NavLink to="/our-services" activeClassName="active-link" onClick={() => setShowDropdown(false)}>Our Services</NavLink></li>
+                            <li><NavLink to="/contact-us" activeClassName="active-link" onClick={() => setShowDropdown(false)}>Contact Us</NavLink></li>
+                            <li><NavLink to="/place-an-order" activeClassName="active-link" onClick={() => setShowDropdown(false)}>Place an Order</NavLink></li>
+                    </ul>
+                </div>
+                } 
         </div>
+        
     )
 }

@@ -9,9 +9,20 @@
 
 .aboutus--bannerText {
     color:#404b1f;
-    position: relative;
-    top: -24vh;
+    position: absolute;
     z-index: 1000;
+}
+
+.aboutus--bannerContent {
+    /* overflow: hidden;
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column; */
+    width: 100%;
+    position: relative;
 }
 
 .aboutus--weAreImage {
@@ -22,7 +33,7 @@
     padding-right: 10%;
     text-align: left;
     position: relative;
-    top: -8vh;
+    top: 5vh;
 
 }
 .aboutus--weAreImage h1 {
@@ -45,10 +56,50 @@
     font-family: "Romanesco", cursive;
     color: #404b1f;
     letter-spacing: 2px;
+    font-size: 3.5rem;
+
 }
 
 .aboutus--buttons {
     display: flex;
     justify-content: center;
     gap: 2vw;
+    position: relative;
+}
+
+@media only screen and (max-width : 1172px) {
+    .aboutus--weAreImage {
+        flex-direction: column-reverse;
+    }
+    .aboutus--weAreImage {
+        text-align: center;
+    }
+    .aboutus--description {
+        max-width: none;
+    }
+}
+
+@media only screen and (max-width : 1000px) {
+    .aboutus--bannerText {
+        font-size: 30px;
+    }
+
+}
+
+@media only screen and (max-width : 700px) {
+    .aboutus--bannerText {
+        font-size: 25px;
+    }
+    .aboutus--weAreImage h1 {
+        font-size: 2.2rem;
+    }
+    .aboutus--olori {
+        font-size: 2rem;
+    }
+    .aboutus--buttons {
+        flex-direction: column;
+    }
+    .aboutus--weAreImage img {
+        max-width: 50%;
+    }
 }

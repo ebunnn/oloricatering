@@ -9,9 +9,18 @@
 
 .contactus--bannerText {
     color:#404b1f;
-    position: relative;
-    top: -24vh;
+    position: absolute;
     z-index: 1000;
+}
+
+.contactus--bannerContent {
+    overflow: hidden;
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
 }
 
 .contactus--formContainer {
@@ -46,6 +55,9 @@
     width: 30%;
 }
 
+.contactus--contactInfo a {
+    color: #404b1f;
+}
 .contactus--contactInfo p {
     font-size: 1.2rem;
 }
@@ -54,4 +66,67 @@
     justify-content: center;
     gap: 15vw;
     color: #404b1f;
+}
+
+@media only screen and (max-width : 1000px) {
+    .contactus--formAndText {
+        flex-direction: column;
+        align-items: center;
+        gap: 5vh;
+        text-align: center;
+    }
+    .contactus--contactInfo {
+        text-align: center;
+        width: 55%;
+    }
+    .contactus--formAndText input {
+        width: 60vh;
+    }
+    .contactus--formAndText textarea {
+        width: 60vh;
+    }
+    
+}
+
+@media only screen and (max-width : 800px) {
+    .contactus--formAndText input {
+        width: 50vh;
+    }
+    .contactus--formAndText textarea {
+        width: 50vh;
+}
+}
+@media only screen and (max-width : 660px) {
+    .contactus--formAndText input {
+        width: 30vh;
+    }
+    .contactus--formAndText textarea {
+        width: 30vh;
+}
+}
+
+@media only screen and (max-width : 545px) {
+    .contactus--contactInfo a {
+        font-size: 80%;
+    }
+}
+
+@media only screen and (max-width : 425px) {
+    .contactus--formAndText input {
+        width: 27vh;
+    }
+    .contactus--formAndText textarea {
+        width: 27vh;
+    }
+    .contactus--contactInfo {
+        text-align: center;
+        width: 70%;
+    }
+    
+}
+
+@media only screen and (max-width : 350px) {
+    .contactus--contactInfo a {
+        font-size: 75%;
+    }
 }

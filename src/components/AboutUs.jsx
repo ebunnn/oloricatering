@@ -1,20 +1,27 @@
-import React from "react";
+import {React, useEffect} from "react";
 import "../css/AboutUs.css";
-import {Link} from "react-router-dom";
+import {NavLink} from "react-router-dom";
 import banner from "../Images/olori cover page.png";
-import people from "../Images/about me img.png"
+import people from "../Images/about me img.png";
+import Banner from "./Banner";
+import AOS from "aos";
+import 'aos/dist/aos.css';
 
 
 export default function AboutUs() {
+
+    useEffect(()=> {
+        AOS.init({duration: 2000});
+    }, []);
+
     return (
         <div className="aboutus--container">
-            <img className="aboutus--banner" src={banner} alt="Our Services banner" />
-            <h2 className="aboutus--bannerText">About Us</h2>
+            <Banner page="About Us"/>
             <div className="aboutus--weAreImage">
                 <div className="aboutus--text">
-                    <h1>We Are</h1>
-                    <h3 style={{fontSize:"3.5rem", lineHeight: "0" }} className="aboutus--olori">Olori Catering Services</h3>
-                    <p className="aboutus--description">Your go-to destination for authentic Nigerian cuisine in the DMV & Pennsylvania area.
+                    <h1 data-aos="fade-up">We Are</h1>
+                    <h3 data-aos="fade-up"style={{lineHeight: "0" }} className="aboutus--olori">Olori Catering Services</h3>
+                    <p data-aos="fade-up" className="aboutus--description">Your go-to destination for authentic Nigerian cuisine in the DMV & Pennsylvania area.
                     At Olori Catering Services, we pride ourselves on offering a diverse menu of delicious
                     Nigerian dishes, prepared with love and care to satisfy your cravings and elevate your 
                     dining experience. Our culinary journey began in the heart of
@@ -35,15 +42,16 @@ export default function AboutUs() {
                     the true taste of Africa with Olori Catering Services.
                     </p>
                 </div>
-                <img src={people} alt="Yoruba people cartoon" />
+                <img data-aos="fade-up" src={people} alt="Yoruba people cartoon" />
             </div>
-            <div className="aboutus--buttons">
-                <Link to="/our-services"><button class="button-74" role="button">Our Services</button></Link>
-                <Link to="/contact-us"><button class="button-74" role="button">Contact Us</button></Link>
-            </div>
-            <p></p>
-            <p></p>
+            <br/>
+            <br/>
 
+            <div className="aboutus--buttons">
+                <NavLink to="/our-services"><button class="button-74" role="button">Our Services</button></NavLink>
+                <NavLink to="/contact-us"><button class="button-74" role="button">Contact Us</button></NavLink>
+            </div>
+            <br/>
         </div>
     )
 }

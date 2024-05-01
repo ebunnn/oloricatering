@@ -24,14 +24,12 @@ function sendEmail({ senderName, email, subject, message }) {
     });
 
     const mail_configs = {
-      from: process.env.SENDER,
+      from: process.env.EMAIL,
       to: process.env.EMAIL,
       subject: subject,
       html: `
-      <h4>${senderName}</h4>
-      <br/>
+      <h4>Sender Name: ${senderName}</h4>
       <p>Sender Email: ${email}</p>
-      <br/>
       <p>${message}</p>
       `,
     };

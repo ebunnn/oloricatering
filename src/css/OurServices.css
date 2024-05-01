@@ -11,10 +11,19 @@
 }
 
 .ourservices--bannerText {
-    color: #404b1f;
-    position: relative;
-    top: -24vh;
+    color:#404b1f;
+    position: absolute;
     z-index: 1000;
+}
+
+.ourservices--bannerContent {
+    width: 100%;
+    overflow: hidden;
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .ourservices--gridContainer {
@@ -82,7 +91,7 @@
     font-family: "Spectral SC", serif;
 }
   
-  .active, .ourservices--accordion:hover {
+.ourservices--accordion:hover {
     background-color: #ccc; 
   }
   
@@ -92,3 +101,16 @@
     overflow: hidden;
     font-size: 1.2rem;
   }
+
+  @media only screen and (max-width : 1050px) {
+    .ourservices--gridContainer {
+        width: 80%;
+    }
+    .ourservices--accordionContainer {
+        width: 75%;
+    }
+  }
+
+  /* @media only screen and (max-width : 800px) {
+
+  } */
