@@ -13,7 +13,6 @@ app.use((req, res, next) => {
   next();
 });
 
-// const BASE_URL = 'https://oloricatering-api.vercel.app';
 
 function sendEmail({ senderName, email, phoneNumber, subject, message }) {
   return new Promise((resolve, reject) => {
