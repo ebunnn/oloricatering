@@ -13,6 +13,8 @@ app.use((req, res, next) => {
   next();
 });
 
+const BASE_URL = 'https://oloricatering-api.vercel.app';
+
 function sendEmail({ senderName, email, phoneNumber, subject, message }) {
   return new Promise((resolve, reject) => {
     var transporter = nodemailer.createTransport({
@@ -46,7 +48,7 @@ function sendEmail({ senderName, email, phoneNumber, subject, message }) {
   }); 
 }
 
-app.get("/send-email", (req, res) => {
+app.get(`${BASE_URL}/send-email`, (req, res) => {
   sendEmail(req.query)
     .then((response) => res.send(response.message))
     .catch((error) => res.status(500).send(error.message));
@@ -54,5 +56,4 @@ app.get("/send-email", (req, res) => {
 
 app.listen(port, () => {
   console.log(`nodemailer is listening at http://localhost:${port}`);
-  console.log(process.env.EMAIL);
 });
