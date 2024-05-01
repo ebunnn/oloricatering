@@ -4,7 +4,6 @@ const nodemailer = require("nodemailer");
 const cors = require("cors");
 const app = express();
 const port = 5001;
-const routes = require("./routes/server.js");
 
 app.use(cors());
 app.use(express.json({ limit: "25mb" }));
@@ -14,7 +13,6 @@ app.use((req, res, next) => {
   next();
 });
 
-app.use("/send-email", routes);
 
 function sendEmail({ senderName, email, phoneNumber, subject, message }) {
   return new Promise((resolve, reject) => {
