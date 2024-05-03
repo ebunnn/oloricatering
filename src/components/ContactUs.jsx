@@ -19,9 +19,9 @@ export default function ContactUs() {
             alert("Please fill out all required fields");
             return;
           }
-
+        axios.defaults.withCredentials = true;
         axios
-          .get("http://localhost:5001/send-email", { //https://oloricatering-api.vercel.app/send-email
+          .get("https://oloricatering-api.vercel.app/send-email", { //http://localhost:5001/send-email
             params: {
               senderName,
               email,
