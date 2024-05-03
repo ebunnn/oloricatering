@@ -13,7 +13,7 @@ const port = 5001;
 //   }
 // ));
 
-const allowedOrigins = ["https://oloricatering.vercel.app/"];
+const allowedOrigins = ["https://oloricatering.vercel.app"];
 
 app.use(cors({
   origin: (origin, callback) => {
