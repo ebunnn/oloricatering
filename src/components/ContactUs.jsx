@@ -21,7 +21,7 @@ export default function ContactUs() {
           }
         axios.defaults.withCredentials = true;
         axios
-          .get("http://localhost:5001", { //http://localhost:5001/send-email https://oloricatering-api.vercel.app/send-email"
+          .get("https://oloricatering-api.vercel.app/send-email", { //http://localhost:5001/send-email https://oloricatering-api.vercel.app/send-email"
             params: {
               senderName,
               email,
