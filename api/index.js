@@ -7,7 +7,7 @@ const port = 5001;
 
 app.use(cors(
   {
-    origin: ["*"],
+    origin: ["https://oloricatering.vercel.app"],
     methods: ["GET", "POST"],
     credentials: true
   }
