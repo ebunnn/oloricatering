@@ -7,7 +7,7 @@ import { faBars } from '@fortawesome/free-solid-svg-icons';
 import { faTimes } from '@fortawesome/free-solid-svg-icons';
 
 
-export default function Navbar( {showDropdown, setShowDropdown, toggleDropdown}) {
+export default function Navbar( {showDropdown, setShowDropdown}) {
     
     const [isBarsShowing, setIsBarsShowing] = useState(true);
     
@@ -24,7 +24,7 @@ export default function Navbar( {showDropdown, setShowDropdown, toggleDropdown})
             <div className="navbar--contents">
                 {/* <div onClick={handleBars}>{isBarsShowing ? <FontAwesomeIcon className="navbar--bars" icon={faBars} /> : <FontAwesomeIcon className="navbar--bars" icon={faTimes} />}</div> */}
                 {/* <NavLink to="/"><img className="navbar--logo" style={{width: "40%",top:"0.5vh",height: "auto",left: "-6vw",position: "relative"}} src={OloriCateringLogo} alt="Website logo" /></NavLink> */}
-                    <NavLink to="/"><img className="navbar--logo" style={{width: "180px",top:"0.5vh",height: "auto",position: "relative"}} src={OloriCateringLogo} alt="Website logo" /></NavLink>
+                    <NavLink to="/"><img className="navbar--logo" style={{width: "180px",top:"0.5vh",height: "auto",position: "relative"}} src="https://github.com/ebunnn/oloricatering/blob/main/src/Images/olori%20catering%201.png?raw=true" alt="Website logo" /></NavLink>
                     <FontAwesomeIcon className="navbar--bars" icon={isBarsShowing ? faBars : faTimes} onClick={handleBars} />
                     <ul className="navbar--links">
                             <li><NavLink to="/" activeClassName="active-link">Home</NavLink></li>

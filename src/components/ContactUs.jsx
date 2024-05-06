@@ -21,7 +21,7 @@ export default function ContactUs() {
           }
         axios.defaults.withCredentials = true;
         axios
-          .get("https://oloricatering-api.vercel.app", { //http://localhost:5001/send-email https://oloricatering-api.vercel.app/send-email"
+          .get("http://localhost:5001", { //http://localhost:5001/send-email https://oloricatering-api.vercel.app/send-email"
             params: {
               senderName,
               email,
@@ -34,6 +34,7 @@ export default function ContactUs() {
             //success
             console.log("success");
             alert("Message Sent! Thank you for your inquiry, we will get back to you as soon as possible.")
+            window.location.reload();
           })
           .catch(() => {
             console.log("failure");
