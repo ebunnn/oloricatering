@@ -57,7 +57,7 @@ async function sendEmail({ senderName, email, phoneNumber, subject, message }) {
   }
 }
 
-app.get("/send-email", async (req, res) => {
+app.get("/", async (req, res) => {
   try {
     const response = await sendEmail(req.query);
     res.send(response.message);
