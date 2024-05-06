@@ -5,29 +5,14 @@ const cors = require("cors");
 const app = express();
 const port = 5001;
 
-// app.use(cors(
-//   {
-//     origin: ['https://oloricatering.vercel.app'],
-//     methods: ["GET", "POST"],
-//     credentials: true
-//   }
-// ));
+app.use(cors(
+  {
+    origin: ['https://oloricatering.vercel.app'],
+    methods: ["GET", "POST"],
+    credentials: true
+  }
+));
 
-const allowedOrigins = ["https://oloricatering.vercel.app"];
-
-app.use(cors({
-  origin: (origin, callback) => {
-    if (!origin || allowedOrigins.indexOf(origin) !== -1) {
-        callback(null, true);
-      } else {
-        callback(new Error('Not allowed by CORS'));
-      }
-  },
-  methods: 'GET',
-  allowedHeaders: '',
-  credentials: false,
-  
-}));
 
 app.use(express.json({ limit: "25mb" }));
 app.use(express.urlencoded({ limit: "25mb" }));
