@@ -10,7 +10,7 @@ export default function Footer() {
         <div className="footer--container">
             <p className="footer--copyright">© Olori Catering Services</p>
             <div className="footer--icons">
-            <a href="https://instagram.com" target="_blank" rel="noreferrer">
+            <a href="https://www.instagram.com/oloricateringservices/" target="_blank" rel="noreferrer">
                 <FontAwesomeIcon icon={faInstagram} className="footer--icon"/>
             </a>
             <a href="tel:+14436758105">
