@@ -15,7 +15,7 @@ export default function ContactUs() {
     const [message, setMessage] = useState("");
 
     const sendMail = () => {
-        if (!senderName || !email || !message || !phoneNumber) {
+        if (!senderName || !message || !phoneNumber) {
             alert("Please fill out all required fields");
             return;
           }
@@ -70,7 +70,7 @@ export default function ContactUs() {
                             required
                         />
                         <br />
-                        <label className="contactus--label">Your Email <span style={{color:"red"}}>*</span></label><br />
+                        <label className="contactus--label">Your Email</label><br />
                         <input
                             type="text"
                             className="contactus--textLabel"

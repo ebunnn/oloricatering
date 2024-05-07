@@ -22,8 +22,6 @@ export default function Navbar( {showDropdown, setShowDropdown}) {
     return (
         <div className="navbar--container">
             <div className="navbar--contents">
-                {/* <div onClick={handleBars}>{isBarsShowing ? <FontAwesomeIcon className="navbar--bars" icon={faBars} /> : <FontAwesomeIcon className="navbar--bars" icon={faTimes} />}</div> */}
-                {/* <NavLink to="/"><img className="navbar--logo" style={{width: "40%",top:"0.5vh",height: "auto",left: "-6vw",position: "relative"}} src={OloriCateringLogo} alt="Website logo" /></NavLink> */}
                     <NavLink to="/"><img className="navbar--logo" style={{width: "180px",top:"0.5vh",height: "auto",position: "relative"}} src="https://github.com/ebunnn/oloricatering/blob/main/src/Images/olori%20catering%201.png?raw=true" alt="Website logo" /></NavLink>
                     <FontAwesomeIcon className="navbar--bars" icon={isBarsShowing ? faBars : faTimes} onClick={handleBars} />
                     <ul className="navbar--links">

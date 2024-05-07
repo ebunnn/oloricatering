@@ -121,20 +121,20 @@ export default function OurServices() {
                         <div className="oursevices--panel-content">
                             <p>Àmàlà</p>
                             <p>Iyán {"("}Pounded Yam{")"}</p>
-                            <p>Èbà</p>
+                            <p>Ẹ̀bà</p>
                         </div>
                     </div>
                     <button className="ourservices--accordion" onClick={() => handlePanelClick("Soups")}>Soups {"("}Ọbẹ̀{")"}     <FontAwesomeIcon icon={faChevronDown} /></button>
                     <div style={{ display: openPanels["Soups"] ? "block" : "none" }} className="ourservices--panel">
                         <div className="oursevices--panel-content">
                             <p>Buka Stew</p>
-                            <p>Efo Riro {"("}Vegetable Soup{")"}</p>
+                            <p>Ẹ̀fọ́ Rírò {"("}Vegetable Soup{")"}</p>
                             <p>Egusi</p>
-                            <p>Okro {"("}Ilá{")"}</p>
+                            <p>Okra {"("}Ilá{")"}</p>
                             <p>Ewédú</p>
                             <p>Ọ̀gbọ̀nọ̀</p>
                             <p>Bitter Leaf Stew</p>
-                            <p>Afang</p>
+                            <p>Afang Stew</p>
                             <p>Gbẹ̀gìrì</p>
                             <p>Ayamase {"("}Designer Stew{")"}</p>
                             <p>Goat Meat Pepper Soup</p>

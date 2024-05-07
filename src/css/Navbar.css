@@ -76,13 +76,21 @@
 
   .navbar--bars-dropdown {
     display: flex;
+    flex-direction: column; 
+    align-items: center; 
     justify-content: center;
+    text-align: center;
     background-color: white;
     width: 100%;
     height: 40vh;
     color: #404b1f;
     z-index: 1500;
   }
+
+  .navbar--bars-dropdown-links {
+    padding-left: 0;
+  }
+
   .navbar--bars-dropdown-links li {
     list-style: none;
   }
