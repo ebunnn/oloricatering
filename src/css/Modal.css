@@ -19,6 +19,7 @@
     background-color: #fefefe;
     position: relative;
     font-size: 1.5rem;
+    top: 12vh;
   }
   
   .modal--close {
