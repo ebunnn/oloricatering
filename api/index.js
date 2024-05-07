@@ -8,7 +8,7 @@ const port = 5001;
 app.use(cors(
   {
     origin: ["https://oloricateringservices.com"],
-    methods: ["GET", "POST"],
+    methods: ["GET", "POST", "OPTIONS"],
     credentials: true
   }
 ));
@@ -56,6 +56,8 @@ async function sendEmail({ senderName, email, phoneNumber, subject, message }) {
     throw { message: "An error has occurred" };
   }
 }
+
+app.options("/", cors());
 
 app.get("/", async (req, res) => {
   try {
