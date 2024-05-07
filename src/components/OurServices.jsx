@@ -71,7 +71,7 @@ export default function OurServices() {
                     a mouthwatering assortment of meats. Each bite is a burst of authentic \
                     Nigerian flavors that will transport you to the streets of Lagos. \
                     Don't miss out on this culinary adventure – request our Amala on Spot today!")}>
-                    <img className="ourservices--gridImg" src="https://github.com/ebunnn/oloricatering/blob/main/src/Images/amala2.png?raw=true" alt="Amala image"/>
+                    <img className="ourservices--gridImg" src="=" alt="Amala image"/>
                     <span className="ourservices--imageText">Àmàlà on Spot</span>
                 </div>
                 <div className="image-container" onClick={() => openModal(

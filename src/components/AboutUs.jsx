@@ -1,8 +1,7 @@
 import {React, useEffect} from "react";
 import "../css/AboutUs.css";
 import {NavLink} from "react-router-dom";
-import banner from "../Images/olori cover page.png";
-import people from "../Images/about me img.png";
+import people from "../Images/about me compressed.png";
 import Banner from "./Banner";
 import AOS from "aos";
 import 'aos/dist/aos.css';
@@ -42,7 +41,7 @@ export default function AboutUs() {
                     the true taste of Africa with Olori Catering Services.
                     </p>
                 </div>
-                <img data-aos="fade-up" src="https://github.com/ebunnn/oloricatering/blob/main/src/Images/about%20me%20img.png?raw=true" alt="Yoruba people cartoon" />
+                <img data-aos="fade-up" src={people} alt="Yoruba people cartoon" />
             </div>
             <br/>
             <br/>
