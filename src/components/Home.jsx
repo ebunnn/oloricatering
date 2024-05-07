@@ -14,7 +14,7 @@ export default function Home({showDropdown}) {
 
     return (
         <div className={`home--container ${showDropdown ? 'home--container-overlay' : ''}`}>
-            <img className="home--amalaImg" src="https://res.cloudinary.com/djksz5job/image/upload/v1715040818/Hero.png" alt="Image of amala" />
+            <img className="home--amalaImg" src="https://github.com/ebunnn/oloricatering/blob/main/src/Images/amala2.png?raw=true" alt="Image of amala" />
             <div className="home--imageTextContainer">
                 <div data-aos="fade-up" className="home--text">
                     <h3 className="home--olori">Olori Catering Services</h3>

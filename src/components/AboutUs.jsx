@@ -42,7 +42,7 @@ export default function AboutUs() {
                     the true taste of Africa with Olori Catering Services.
                     </p>
                 </div>
-                <img data-aos="fade-up" src={people} alt="Yoruba people cartoon" />
+                <img data-aos="fade-up" src="https://github.com/ebunnn/oloricatering/blob/main/src/Images/about%20me%20img.png?raw=true" alt="Yoruba people cartoon" />
             </div>
             <br/>
             <br/>

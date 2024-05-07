@@ -9,6 +9,7 @@ import Footer from "./components/Footer";
 import OurServices from "./components/OurServices";
 import PlaceAnOrder from "./components/PlaceAnOrder";
 import ScrollToTop from './components/ScrollToTop';
+import NotFoundPage from './components/NotFoundPage';
 
 function App() {
 
@@ -29,7 +30,8 @@ function App() {
               <Route path="/about-us" element={<AboutUs />} />    
               <Route path="/contact-us" element={<ContactUs />} />
               <Route path='/our-services' element={<OurServices />} /> 
-              <Route path="/place-an-order" element={<PlaceAnOrder />}   />                
+              <Route path="/place-an-order" element={<PlaceAnOrder />}   />
+              <Route path="*" element={<NotFoundPage/>} />                
             </Routes>
           </header>
            <Footer /> 
