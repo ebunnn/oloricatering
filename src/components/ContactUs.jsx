@@ -37,7 +37,7 @@ export default function ContactUs() {
             alert("Message Sent! Thank you for your inquiry, we will get back to you as soon as possible.")
             window.location.reload();
           })
-          .catch(() => {
+          .catch((error) => {
             console.log("failure");
             console.error("An error occurred:", error);
             alert("Failed to send message. Please try again later.");
