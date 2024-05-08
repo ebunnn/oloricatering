@@ -29,6 +29,7 @@ export default function ContactUs() {
               subject,
               message,
             },
+            withCredentials: true,
           })
           .then(() => {
             //success
@@ -38,6 +39,8 @@ export default function ContactUs() {
           })
           .catch(() => {
             console.log("failure");
+            console.error("An error occurred:", error);
+            alert("Failed to send message. Please try again later.");
           });
       };
 
