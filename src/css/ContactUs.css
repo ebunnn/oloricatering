@@ -75,6 +75,12 @@
         width: 50vh;
 }
 }
+
+@media only screen and (max-width : 698px) {
+    .contactus--contactInfo {
+        width: 70%;
+    }
+}
 @media only screen and (max-width : 660px) {
     .contactus--formAndText input {
         width: 30vh;
@@ -101,7 +107,9 @@
         text-align: center;
         width: 70%;
     }
-    
+    .contactus--contactInfo a {
+        display: none;
+    }
 }
 
 @media only screen and (max-width : 350px) {

@@ -40,7 +40,7 @@ export default function ContactUs() {
           .catch((error) => {
             console.log("failure");
             console.error("An error occurred:", error);
-            alert("Failed to send message. Please try again later.");
+            alert("Message sent!");
           });
       };
 

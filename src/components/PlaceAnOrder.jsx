@@ -15,8 +15,8 @@ export default function PlaceAnOrder() {
             <p>To place an order you have a few options:</p>
             <ul className="placeanorder--order-options">
                 <li>Call our <a href="tel:+14436758105">phone number</a> </li>
-                <li>Send us a message on the contact form located on the <NavLink to="/contact-us">Contact Us</NavLink> page</li>
-                <li>Send us an email</li>
+                <li>Send us a message on <NavLink to="/contact-us">Contact Us</NavLink> page</li>
+                <li>Send us an <a href="mailto:oloricateringservices@gmail.com">email</a></li>
             </ul>
         </div>
     )
