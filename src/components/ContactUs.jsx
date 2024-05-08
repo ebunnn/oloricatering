@@ -58,7 +58,7 @@ export default function ContactUs() {
             <h2>Contact Information</h2>
             <p>Contact us to make an order, ask any questions, or receive more information.</p>
             <p><FontAwesomeIcon icon={faPhone} />  <a href="tel:+14436758105">+1{"("}443{")"}-675-8105</a></p>
-            <p><FontAwesomeIcon icon={faMailBulk} /> <a href="mailto:oloricateringservices@gmail.com">oloricateringservices@gmail.com</a></p>
+            <p><FontAwesomeIcon icon={faMailBulk} /> <a href="mailto:oloricateringservices@gmail.com">Email</a></p>
         </div>
 
 
