@@ -41,6 +41,7 @@ export default function ContactUs() {
             console.log("failure");
             console.error("An error occurred:", error);
             alert("Message sent!");
+            window.location.reload();
           });
       };
 
