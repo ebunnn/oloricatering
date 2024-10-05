@@ -71,7 +71,7 @@ export default function OurServices() {
                     a mouthwatering assortment of meats. Each bite is a burst of authentic \
                     Nigerian flavors that will transport you to the streets of Lagos. \
                     Don't miss out on this culinary adventure – request our Amala on Spot today!")}>
-                    <img className="ourservices--gridImg" src="https://github.com/ebunnn/oloricatering/blob/main/src/Images/amala%20compressed.jpg?raw=true" alt="Amala image"/>
+                    <img className="ourservices--gridImg" src="https://oloricateringhero.s3.amazonaws.com/olori-amala.jpg" alt="Amala image"/>
                     <span className="ourservices--imageText">Àmàlà on Spot</span>
                 </div>
                 <div className="image-container" onClick={() => openModal(
@@ -82,7 +82,7 @@ export default function OurServices() {
                     experience that delights every palate. Let us turn your event into an unforgettable\
                     feast – book our catering services today!"
                     )}>
-                    <img className="ourservices--gridImg" src="https://github.com/ebunnn/oloricatering/blob/main/src/Images/catering%20compressed.jpg?raw=true" alt="Catering image"/>
+                    <img className="ourservices--gridImg" src="https://oloricateringhero.s3.amazonaws.com/olori-catering.jpg" alt="Catering image"/>
                     <span className="ourservices--imageText">Catering</span>
                  </div>
                  <div className="image-container" onClick={() => openModal("Experience the vibrant \
@@ -92,13 +92,13 @@ export default function OurServices() {
                     a seasoned explorer of Nigerian cuisine or new to its delights, our dishes are sure to \
                     delight your palate and leave you craving for more. Treat yourself to a taste of Africa\
                     – it's a culinary adventure like no other!")}>
-                    <img className="ourservices--gridImg" src="https://github.com/ebunnn/oloricatering/blob/main/src/Images/africanCusine%20compressed.jpg?raw=true" alt="Nigerian cuisine image"/>
+                    <img className="ourservices--gridImg" src="https://oloricateringhero.s3.amazonaws.com/olori-cuisine.jpg" alt="Nigerian cuisine image"/>
                     <span className="ourservices--imageText">Nigerian Cuisine</span>
                 </div>
                 <div className="image-container" onClick={() => openModal(
                     "Enjoy the convenience of our delivery services, serving the DC, Maryland, Virginia, and\
                     Pennsylvania regions. Experience the flavors of our cuisine from the comfort of your home!")}>
-                    <img className="ourservices--gridImg" src="https://github.com/ebunnn/oloricatering/blob/main/src/Images/Designer%20compressed.jpg?raw=true" alt="Delivery image"/>
+                    <img className="ourservices--gridImg" src="https://oloricateringhero.s3.amazonaws.com/olori-delivery.jpg" alt="Delivery image"/>
                     <span className="ourservices--imageText">Delivery</span>
                 </div>
             </div>
