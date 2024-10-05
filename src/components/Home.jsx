@@ -14,7 +14,7 @@ export default function Home({showDropdown}) {
 
     return (
         <div className={`home--container ${showDropdown ? 'home--container-overlay' : ''}`}>
-            <img className="home--amalaImg" src="https://oloricateringhero.s3.amazonaws.com/amala2.png" alt="Image of amala" />
+            <img className="home--amalaImg" src="https://oloricateringhero.s3.amazonaws.com/olori-hero.jpg" alt="Image of amala" />
             <div className="home--imageTextContainer">
                 <div className="home--text">
                     <h3 className="home--olori">Olori Catering Services</h3>
