@@ -1,10 +1,5 @@
 import {React, useState, useEffect} from "react";
 import "../css/OurServices.css"
-import banner from "../Images/olori cover page.png"
-import catering from "../Images/catering.jpg"
-import amala from "../Images/amala.jpg"
-import cuisine from "../Images/africanCuisine.jpg"
-import delivery from "../Images/Designer.jpg"
 import Modal from "./Modal";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
